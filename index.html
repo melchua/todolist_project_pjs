@@ -5,39 +5,50 @@
   </head>
 
   <body>
-    <h1>Todo List</h1>
+    <!-- start of container -->
+    <div class="container">
 
-    <div>
-      <button onclick="handlers.toggleAll()">Toggle All</button>
+    <!-- start item 1 -->
+      <div class="item item1">
+        <h1 class="centertext">Todo List</h1>
+        <div>
+          <button onclick="handlers.toggleAll()">Toggle All</button>
+        </div>
+        <div>
+          <button onclick="handlers.addTodo()">Add</button>
+          <input type="text" id="addTodoTextInput">
+        </div>
+        <div>
+          <button onclick="handlers.changeTodo()">Change Todo</button>
+          <input id="changeTodoPositionInput" type="number">
+          <input id="changeTodoTextInput" type="text">
+        </div>
+        <div>
+          <button onclick="handlers.deleteTodo()">Delete</button>
+          <input id="deleteTodoPositionInput" type="number">
+        </div>
+        <div>
+          <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+          <input id="toggleCompletedPositionInput" type="number">
+        </div>
+      <!-- end of item 1 -->
+      </div>
+
+      <div class="item item2">
+      <!-- javascript will place todo list items here -->
+        <ul></ul>
+      </div>
+
+      <div class="item leftside">
+
+      </div>
+
+      <div class="item rightside">
+
+      </div>
+
     </div>
-
-    <div>
-      <button onclick="handlers.addTodo()">Add</button>
-      <input type="text" id="addTodoTextInput">
-    </div>
-
-    <div>
-      <button onclick="handlers.changeTodo()">Change Todo</button>
-      <input id="changeTodoPositionInput" type="number">
-      <input id="changeTodoTextInput" type="text">
-
-    </div>
-
-    <div>
-      <button onclick="handlers.deleteTodo()">Delete</button>
-      <input id="deleteTodoPositionInput" type="number">
-    </div>
-
-    <div>
-      <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
-      <input id="toggleCompletedPositionInput" type="number">
-    </div>
-
-
-    <ul>
-
-    </ul>
-
+    <!-- end of container -->
     <script src="script.js"></script>
   </body>
 
