@@ -25,6 +25,10 @@ input {
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .container {
   height: 600px;
   display: grid;
@@ -37,6 +41,9 @@ input {
 .item {
   padding: 30px 50px 50px 40px;
   background-color: grey;
+  font-family: Helvetica, Arial;
+  color: darkgrey;
+  font-size: 24px;
 }
 
 .item1 {
